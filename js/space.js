@@ -29,10 +29,11 @@ function showResults(items) {
         ? items.map(item => `
             <div class="col">
                 <div class="card">
-                    <img src="${item.links[0]?.href || ''}" class="card-img-top" alt="${item.data[0]?.title || 'Sin título'}">
+                    <img src="${item.links[0]?.href || ''}" class="card-img-top" alt="${item.data[0]?.title}">
                     <div class="card-body">
-                        <h5 class="card-title">${item.data[0]?.title || 'Sin título'}</h5>
-                        <p class="card-text">${item.data[0]?.description || 'Sin descripción disponible.'}</p>
+                        <h5 class="card-title">${item.data[0]?.title}</h5>
+                        <p class="card-text">${item.data[0]?.description}</p>
+                        <p class="card-date">${item.data[0]?.date_created ? new Date(item.data[0]?.date_created).toLocaleDateString() : 'Fecha no disponible'}</p>
                     </div>
                 </div>
             </div>`).join('') 
