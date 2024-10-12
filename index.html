@@ -16,14 +16,16 @@
       <div class="row py-lg-3">
         <div class="col-lg-6 col-md-8 mx-auto">
           <h1 class="fw-light">Buscador de imágenes de la NASA</h1>
-          <input type="search" class="form-control" name="buscar" id="inputBuscar" placeholder="Ej.: JUPITER">
-          <button class="btn btn-primary my-2" id="btnBuscar">Buscar imágenes</button>
+          <input type="search" class="form-control" name="buscar" id="inputSearch" placeholder="Ej.: JUPITER">
+          <button class="btn btn-custom my-2" id="btnBuscar">Buscar imágenes</button>
+
         </div>
       </div>
     </div>
 
     <div class="container">
       <div id="contenedor">
+        <div class="row row-cols-1 row-cols-md-2 g-4" id="results"></div>
       </div>
     </div>
   </main>
@@ -33,15 +35,11 @@
       <p class="float-end mb-1">
         <a href="#">Volver arriba</a>
       </p>
-      <p class="mb-1">Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">
-          Jovenes a Programar</a>, y consume datos de <a href="https://api.nasa.gov/" target="_blank">
-          api.nasa.gov</a></p>
+      <p class="mb-1">Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a>, y consume datos de <a href="https://api.nasa.gov/" target="_blank">api.nasa.gov</a></p>
       <p class="mb-1">Generado con fines estrictamente educativos.</p>
     </div>
   </footer>
 
   <script src="js/space.js"></script>
-
 </body>
-
 </html>
